@@ -16,6 +16,7 @@ namespace KN_MAX_3
         Connection_SQL_MXM Conne_test;
         AddGender m_Gen;
         add_Class m_CLass;
+        AddStudnt m_studnet_add;
         public MainUI()
         {
             InitializeComponent();
@@ -24,7 +25,8 @@ namespace KN_MAX_3
 
         private void ADD_ST_bt_Click(object sender, EventArgs e)
         {
-           
+            m_studnet_add = new AddStudnt();
+            m_studnet_add.Show();
         }
 
         private void ADD_GR_BT_Click(object sender, EventArgs e)

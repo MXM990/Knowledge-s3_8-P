@@ -31,6 +31,7 @@
             this.name_gr = new System.Windows.Forms.TextBox();
             this.ADD_bt = new System.Windows.Forms.Button();
             this.BACK_BT = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // name_gr
@@ -84,6 +85,18 @@
             this.BACK_BT.UseVisualStyleBackColor = false;
             this.BACK_BT.Click += new System.EventHandler(this.BACK_BT_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label1.Location = new System.Drawing.Point(53, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Type Name";
+            // 
             // AddGender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +104,7 @@
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(542, 310);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BACK_BT);
             this.Controls.Add(this.ADD_bt);
             this.Controls.Add(this.name_gr);
@@ -108,5 +122,6 @@
         private System.Windows.Forms.TextBox name_gr;
         private System.Windows.Forms.Button ADD_bt;
         private System.Windows.Forms.Button BACK_BT;
+        private System.Windows.Forms.Label label1;
     }
 }

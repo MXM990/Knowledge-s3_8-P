@@ -13,7 +13,7 @@ namespace KN_MAX_3
 {
     public partial class add_Class : Form
     {
-       Insert m_add;
+        Insert m_add;
         MainUI m_Main;
         public add_Class()
         {
