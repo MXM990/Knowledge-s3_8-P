@@ -64,5 +64,22 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
+
+        public bool InsertTeacher(string name_teach, string Name_Class)
+        {
+            try
+            {
+                Conne_Plus.OpenConn();
+                string Qur_Insert_Gr = "INSERT INTO TEACHER VALUES ('" + Guid.NewGuid() + "','" + name_teach + "' ,' " + Name_Class + "')";
+                Command_plus = new SqlCommand(Qur_Insert_Gr, Conne_Plus.Conne);
+                Command_plus.ExecuteNonQuery();
+                Conne_Plus.CloesConn();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

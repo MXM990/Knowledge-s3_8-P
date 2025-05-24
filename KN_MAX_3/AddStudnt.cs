@@ -67,5 +67,10 @@ namespace KN_MAX_3
                 MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void AddStudnt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
