@@ -43,7 +43,8 @@ namespace KN_MAX_3
 
         private void ADD_TECH_BT_Click(object sender, EventArgs e)
         {
-
+            Add_teachers add_Teachers = new Add_teachers();
+            add_Teachers.Show();
         }
         private void EXIT_BT_Click(object sender, EventArgs e)
         {

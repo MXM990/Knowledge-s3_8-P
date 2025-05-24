@@ -29,5 +29,18 @@ namespace KN_MAX_3.SQL
             }
             m_Conne_Plus.CloesConn();
         }
+
+        public void GetTeacher(List<object> TE_list)
+        {
+            m_Conne_Plus.OpenConn();
+            string Qury = "SELECT * FROM CLASS";
+            m_Command_plus = new SqlCommand(Qury, m_Conne_Plus.Conne);
+            m_Reader = m_Command_plus.ExecuteReader();
+            while (m_Reader.Read())
+            {
+                TE_list.Add( m_Reader.GetSqlValue(1).ToString() );
+            }
+            m_Conne_Plus.CloesConn();
+        }
     }
 }
