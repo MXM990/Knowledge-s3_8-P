@@ -22,6 +22,7 @@ namespace KN_MAX_3
 
         private void ADD_bt_Click(object sender, EventArgs e)
         {
+
             m_add = new Insert();
             if (m_add.InsertGender(name_gr.Text))
             {
