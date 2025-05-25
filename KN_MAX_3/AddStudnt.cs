@@ -43,6 +43,7 @@ namespace KN_MAX_3
 
         private void ADD_bt_Click(object sender, EventArgs e)
         {
+
             Guid Gender_guid = new Guid();
             if (Gender_Select.Text == String.Empty || name_stu.Text == string.Empty || phone_stu.Text == string.Empty)
             {
