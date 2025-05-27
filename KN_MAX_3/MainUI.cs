@@ -17,6 +17,7 @@ namespace KN_MAX_3
         AddGender m_Gen;
         add_Class m_CLass;
         AddStudnt m_studnet_add;
+        AddTeacher m_teacher_add;   
         public MainUI()
         {
             InitializeComponent();
@@ -43,7 +44,8 @@ namespace KN_MAX_3
 
         private void ADD_TECH_BT_Click(object sender, EventArgs e)
         {
-
+            m_teacher_add = new AddTeacher();
+            m_teacher_add.Show();   
         }
         private void EXIT_BT_Click(object sender, EventArgs e)
         {

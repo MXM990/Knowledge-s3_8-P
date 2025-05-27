@@ -44,11 +44,6 @@ namespace KN_MAX_3
         private void ADD_bt_Click(object sender, EventArgs e)
         {
             Guid Gender_guid = new Guid();
-            if (Gender_Select.Text == String.Empty || name_stu.Text == string.Empty || phone_stu.Text == string.Empty)
-            {
-                MessageBox.Show("Error!!!", "Empty Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             for (int i = 0; i < m_Gender.Count; i++)
             {
                 if (m_Gender[i].type == Gender_Select.Text)
@@ -67,5 +62,7 @@ namespace KN_MAX_3
                 MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+     
     }
 }

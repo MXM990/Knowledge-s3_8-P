@@ -1,0 +1,5 @@
+﻿Build started...
+1>------ Build started: Project: KN_MAX_3, Configuration: Debug Any CPU ------
+1>  KN_MAX_3 -> C:\Users\Console\Source\Repos\MXM990\Knowledge-s3_8-P\KN_MAX_3\bin\Debug\KN_MAX_3.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build started at 9:11 PM and took 02.518 seconds ==========
