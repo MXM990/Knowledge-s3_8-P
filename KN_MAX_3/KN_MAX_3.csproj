@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADD  Tech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD  Tech.Designer.cs">
+      <DependentUpon>ADD  Tech.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddGender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="SQL\GetData.cs" />
     <Compile Include="SQL\Insert.cs" />
     <Compile Include="SQL\model.cs" />
+    <EmbeddedResource Include="ADD  Tech.resx">
+      <DependentUpon>ADD  Tech.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddGender.resx">
       <DependentUpon>AddGender.cs</DependentUpon>
     </EmbeddedResource>

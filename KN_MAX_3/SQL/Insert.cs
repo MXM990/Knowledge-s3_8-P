@@ -64,5 +64,21 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
+        public bool InsertTech(string Name_th, string phone, Guid Gr_Guid)
+        {
+            try
+            {
+                Conne_Plus.OpenConn();
+                string Qur_Insert_stu = "INSERT INTO TECH VALUES ('" + Guid.NewGuid() + "','" + Name_th + "' , '" + phone + "' , '" + Gr_Guid + "' )";
+                Command_plus = new SqlCommand(Qur_Insert_stu, Conne_Plus.Conne);
+                Command_plus.ExecuteNonQuery();
+                Conne_Plus.CloesConn();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
