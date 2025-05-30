@@ -64,5 +64,25 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
+        public bool Insert_teac(string Name_taec, string phone_teac, string spec_teac,Guid Gr_Guid)
+        {
+            try
+            {
+                Conne_Plus.OpenConn();
+                string Qur_Insert_teac= "INSERT INTO TEACHER VALUES ('"+ Guid.NewGuid() + "',@name_t , @phone_teac , @spec_teac ,@Gr_Guid )";
+                Command_plus = new SqlCommand(Qur_Insert_teac, Conne_Plus.Conne);
+                Command_plus.Parameters.AddWithValue("@name_t", Name_taec);
+                Command_plus.Parameters.AddWithValue("@phone_teac", phone_teac);
+                Command_plus.Parameters.AddWithValue("@spec_teac", spec_teac);
+                Command_plus.Parameters.AddWithValue("@Gr_Guid", Gr_Guid);
+                Command_plus.ExecuteNonQuery(); 
+                Conne_Plus.CloesConn();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

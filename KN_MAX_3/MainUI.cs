@@ -17,6 +17,7 @@ namespace KN_MAX_3
         AddGender m_Gen;
         add_Class m_CLass;
         AddStudnt m_studnet_add;
+        add_teacher m_teacher;  
         public MainUI()
         {
             InitializeComponent();
@@ -43,7 +44,8 @@ namespace KN_MAX_3
 
         private void ADD_TECH_BT_Click(object sender, EventArgs e)
         {
-
+            m_teacher = new add_teacher();
+            m_teacher.Show();
         }
         private void EXIT_BT_Click(object sender, EventArgs e)
         {
@@ -59,6 +61,11 @@ namespace KN_MAX_3
             Conne_test.OpenConn();
             MessageBox.Show(Conne_test.Conne.State.ToString());
             Conne_test.CloesConn();
+        }
+
+        private void MainUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
