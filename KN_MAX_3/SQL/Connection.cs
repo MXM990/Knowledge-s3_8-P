@@ -10,7 +10,7 @@ namespace KN_MAX_3.SQL
     internal class Connection_SQL_MXM
     {
         public SqlConnection Conne;
-        string ConnectionString = "Server = .\\MXM ; Database = TESTLVL_3 ; User Id = sa ; Password = 123 ; ";
+        string ConnectionString = "Server = DESKTOP-KIEISL1\\MXMSERVER; Database = TESTLVL_3 ; User Id = sa ; Password = 123 ; ";
         public void OpenConn()
         {
             Conne = new SqlConnection(ConnectionString);
