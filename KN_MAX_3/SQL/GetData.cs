@@ -29,5 +29,17 @@ namespace KN_MAX_3.SQL
             }
             m_Conne_Plus.CloesConn();
         }
+        public void GetClass(List<model> Cl_list  )
+        {
+            m_Conne_Plus.OpenConn();
+            string Qury = "SELECT * FROM CLASS";
+            m_Command_plus = new SqlCommand(Qury, m_Conne_Plus.Conne);
+            m_Reader = m_Command_plus.ExecuteReader();
+            while (m_Reader.Read())
+            {
+                Cl_list.Add(new model { ID = Guid.Parse(m_Reader.GetSqlValue(0).ToString()), Name = m_Reader.GetSqlValue(1).ToString() });
+            }
+            m_Conne_Plus.CloesConn();
+        }
     }
 }

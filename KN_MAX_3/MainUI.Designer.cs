@@ -34,6 +34,7 @@
             this.ADD_GR_BT = new System.Windows.Forms.Button();
             this.EXIT_BT = new System.Windows.Forms.Button();
             this.Test_bt = new System.Windows.Forms.Button();
+            this.Reg_bt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ADD_TECH_BT
@@ -162,6 +163,27 @@
             this.Test_bt.UseVisualStyleBackColor = false;
             this.Test_bt.Click += new System.EventHandler(this.Test_bt_Click);
             // 
+            // Reg_bt
+            // 
+            this.Reg_bt.BackColor = System.Drawing.Color.Transparent;
+            this.Reg_bt.BackgroundImage = global::KN_MAX_3.Properties.Resources.Picsart_25_05_17_21_25_24_132;
+            this.Reg_bt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reg_bt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Reg_bt.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Reg_bt.FlatAppearance.BorderSize = 0;
+            this.Reg_bt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Reg_bt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Reg_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reg_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.Reg_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Reg_bt.Location = new System.Drawing.Point(385, 242);
+            this.Reg_bt.Name = "Reg_bt";
+            this.Reg_bt.Size = new System.Drawing.Size(116, 48);
+            this.Reg_bt.TabIndex = 6;
+            this.Reg_bt.Text = "Regster";
+            this.Reg_bt.UseVisualStyleBackColor = false;
+            this.Reg_bt.Click += new System.EventHandler(this.Reg_bt_Click);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +191,7 @@
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(542, 310);
+            this.Controls.Add(this.Reg_bt);
             this.Controls.Add(this.Test_bt);
             this.Controls.Add(this.EXIT_BT);
             this.Controls.Add(this.ADD_GR_BT);
@@ -191,6 +214,7 @@
         private System.Windows.Forms.Button ADD_GR_BT;
         private System.Windows.Forms.Button EXIT_BT;
         private System.Windows.Forms.Button Test_bt;
+        private System.Windows.Forms.Button Reg_bt;
     }
 }
 

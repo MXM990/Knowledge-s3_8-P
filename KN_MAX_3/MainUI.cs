@@ -22,8 +22,6 @@ namespace KN_MAX_3
         {
             InitializeComponent();
         }
-       
-
         private void ADD_ST_bt_Click(object sender, EventArgs e)
         {
             m_studnet_add = new AddStudnt();
@@ -61,6 +59,12 @@ namespace KN_MAX_3
             Conne_test.OpenConn();
             MessageBox.Show(Conne_test.Conne.State.ToString());
             Conne_test.CloesConn();
+        }
+
+        private void Reg_bt_Click(object sender, EventArgs e)
+        {
+            Regster_UI reg = new Regster_UI();
+            reg.Show();
         }
     }
 }

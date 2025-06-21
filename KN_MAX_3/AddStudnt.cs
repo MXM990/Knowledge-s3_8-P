@@ -17,7 +17,7 @@ namespace KN_MAX_3
         GetData m_Get_data;
         List<model> m_Gender;
         Insert m_add;
-
+        CheackData Ch_DD;
         public AddStudnt()
         {
             InitializeComponent();
@@ -30,7 +30,10 @@ namespace KN_MAX_3
            m_Get_data.GetGender(m_Gender);
            foreach (var item in m_Gender)
            {
-                Gender_Select.Items.Add(item.type);
+                if (item.type != "")
+                {
+                    Gender_Select.Items.Add(item.type);
+                }
            }
         }
 
@@ -56,15 +59,22 @@ namespace KN_MAX_3
                     Gender_guid = m_Gender[i].ID;
                 }
             }
-
-            m_add = new Insert();
-            if (m_add.Insertstu(name_stu.Text, phone_stu.Text , Gender_guid))
+            Ch_DD = new CheackData();
+            if (!Ch_DD.IsNameExist(name_stu.Text))
             {
-                MessageBox.Show("ADD Done");
+                m_add = new Insert();
+                if (m_add.Insertstu(name_stu.Text, phone_stu.Text, Gender_guid))
+                {
+                    MessageBox.Show("ADD Done");
+                }
+                else
+                {
+                    MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error!!!", "The name Is exist !", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
