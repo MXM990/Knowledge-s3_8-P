@@ -80,5 +80,23 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
+        public bool InsertStudentInClass(Guid Class_guid , Guid stu_guid)
+        {
+            try
+            {
+                Conne_Plus.OpenConn();
+                string Qur_Insert_stu_CLASS = "INSERT INTO STU_CLASS VALUES (NEWID() , @CLASS_GUID_SENDER , @STU_GUID_SENDER)";
+                Command_plus = new SqlCommand(Qur_Insert_stu_CLASS, Conne_Plus.Conne);
+                Command_plus.Parameters.AddWithValue("@CLASS_GUID_SENDER",Class_guid );
+                Command_plus.Parameters.AddWithValue("@STU_GUID_SENDER",stu_guid );
+                Command_plus.ExecuteNonQuery();
+                Conne_Plus.CloesConn();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
