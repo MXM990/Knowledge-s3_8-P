@@ -14,6 +14,7 @@ namespace KN_MAX_3
     {
         MainUI m_Main;
         NewRegsterStunent new_reg;
+        Regster_techer h;
         public Regster_UI()
         {
             InitializeComponent();
@@ -27,7 +28,8 @@ namespace KN_MAX_3
 
         private void re_th_Click(object sender, EventArgs e)
         {
-
+           h = new Regster_techer();
+           h.Show();
         }
 
         private void BACK_BT_Click(object sender, EventArgs e)

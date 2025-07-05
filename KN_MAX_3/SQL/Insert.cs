@@ -98,5 +98,38 @@ namespace KN_MAX_3.SQL
                 return false;
             }
         }
+        public bool insertTehcNew(Guid id_class ,string name_th)
+        {
+            try
+            {
+                Conne_Plus.OpenConn();
+                string Quray = @"DECLARE @GUID UNIQUEIDENTIFIER
+                             
+                                 SET @GUID = ( SELECT TOP 1 ID FROM TECH 
+                                 WHERE NAME_TECH = @nameTH)
+                                 
+								 IF	@GUID IS NOT NULL
+								 BEGIN 
+								 INSERT INTO TECH_CLASS VALUES 
+                                 (NEWID() , @GUIDCLASS , @GUID)
+								 END ";
+                Command_plus = new SqlCommand(Quray, Conne_Plus.Conne);
+                Command_plus.Parameters.AddWithValue("@nameTH", name_th);
+                Command_plus.Parameters.AddWithValue("@GUIDCLASS", id_class);
+                int row = Command_plus.ExecuteNonQuery();
+                Conne_Plus.CloesConn();
+                if (row == -1)
+                {
+                    return false;
+                }
+               
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
     }
 }

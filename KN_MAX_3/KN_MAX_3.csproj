@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regster_techer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regster_techer.Designer.cs">
+      <DependentUpon>Regster_techer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Regster_UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regster_techer.resx">
+      <DependentUpon>Regster_techer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Regster_UI.resx">
       <DependentUpon>Regster_UI.cs</DependentUpon>
