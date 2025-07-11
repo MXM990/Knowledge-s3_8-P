@@ -19,20 +19,26 @@ namespace KN_MAX_3
         {
             InitializeComponent();
         }
-
         private void ADD_bt_Click(object sender, EventArgs e)
         {
-            m_add = new Insert();
-            if (m_add.InsertGender(name_gr.Text))
+            if (name_gr.Text != string.Empty)
             {
-                MessageBox.Show("ADD Done");
+                m_add = new Insert();
+                if (m_add.InsertGender(name_gr.Text))
+                {
+                    MessageBox.Show("add is done", "notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    name_gr.Text = string.Empty;
+                }
+                else
+                {
+                    MessageBox.Show("You Can't ADD", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Error!!!" , "You Can't ADD" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Empty Fild", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void BACK_BT_Click(object sender, EventArgs e)
         {
             m_Main = new MainUI();

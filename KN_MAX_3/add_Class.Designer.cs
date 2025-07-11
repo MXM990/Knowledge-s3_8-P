@@ -40,9 +40,10 @@
             // 
             this.name_class.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.name_class.ForeColor = System.Drawing.Color.Green;
-            this.name_class.Location = new System.Drawing.Point(177, 39);
+            this.name_class.Location = new System.Drawing.Point(286, 46);
+            this.name_class.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.name_class.Name = "name_class";
-            this.name_class.Size = new System.Drawing.Size(162, 30);
+            this.name_class.Size = new System.Drawing.Size(188, 36);
             this.name_class.TabIndex = 0;
             // 
             // ADD_bt
@@ -58,9 +59,10 @@
             this.ADD_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_bt.Location = new System.Drawing.Point(190, 166);
+            this.ADD_bt.Location = new System.Drawing.Point(333, 214);
+            this.ADD_bt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ADD_bt.Name = "ADD_bt";
-            this.ADD_bt.Size = new System.Drawing.Size(149, 63);
+            this.ADD_bt.Size = new System.Drawing.Size(166, 70);
             this.ADD_bt.TabIndex = 5;
             this.ADD_bt.Text = "ADD";
             this.ADD_bt.UseVisualStyleBackColor = false;
@@ -79,9 +81,10 @@
             this.BACK_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BACK_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BACK_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BACK_BT.Location = new System.Drawing.Point(12, 235);
+            this.BACK_BT.Location = new System.Drawing.Point(84, 221);
+            this.BACK_BT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BACK_BT.Name = "BACK_BT";
-            this.BACK_BT.Size = new System.Drawing.Size(149, 63);
+            this.BACK_BT.Size = new System.Drawing.Size(156, 63);
             this.BACK_BT.TabIndex = 6;
             this.BACK_BT.Text = "BACK";
             this.BACK_BT.UseVisualStyleBackColor = false;
@@ -91,9 +94,10 @@
             // 
             this.maxSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.maxSize.ForeColor = System.Drawing.Color.Green;
-            this.maxSize.Location = new System.Drawing.Point(177, 96);
+            this.maxSize.Location = new System.Drawing.Point(286, 116);
+            this.maxSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maxSize.Name = "maxSize";
-            this.maxSize.Size = new System.Drawing.Size(162, 30);
+            this.maxSize.Size = new System.Drawing.Size(188, 36);
             this.maxSize.TabIndex = 7;
             // 
             // label1
@@ -102,9 +106,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(37, 42);
+            this.label1.Location = new System.Drawing.Point(97, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 26);
+            this.label1.Size = new System.Drawing.Size(162, 31);
             this.label1.TabIndex = 8;
             this.label1.Text = "Class Name";
             // 
@@ -114,19 +119,20 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label2.Location = new System.Drawing.Point(37, 99);
+            this.label2.Location = new System.Drawing.Point(97, 120);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 26);
+            this.label2.Size = new System.Drawing.Size(165, 31);
             this.label2.TabIndex = 9;
             this.label2.Text = "Max Student";
             // 
             // add_Class
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(542, 310);
+            this.ClientSize = new System.Drawing.Size(606, 342);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maxSize);
@@ -134,6 +140,7 @@
             this.Controls.Add(this.ADD_bt);
             this.Controls.Add(this.name_class);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "add_Class";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD Gender";

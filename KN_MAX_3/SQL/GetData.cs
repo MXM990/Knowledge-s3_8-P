@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace KN_MAX_3.SQL
 {
@@ -29,7 +30,7 @@ namespace KN_MAX_3.SQL
             }
             m_Conne_Plus.CloesConn();
         }
-        public void GetClass(List<model> Cl_list  )
+        public void GetClass(List<model> Cl_list)
         {
             m_Conne_Plus.OpenConn();
             string Qury = "SELECT * FROM CLASS";
@@ -37,7 +38,7 @@ namespace KN_MAX_3.SQL
             m_Reader = m_Command_plus.ExecuteReader();
             while (m_Reader.Read())
             {
-                Cl_list.Add(new model { ID = Guid.Parse(m_Reader.GetSqlValue(0).ToString()), Name = m_Reader.GetSqlValue(1).ToString() });
+                Cl_list.Add(new model { ID = Guid.Parse(m_Reader.GetSqlValue(0).ToString()), Name = m_Reader.GetSqlValue(1).ToString(), maxsize_stu = m_Reader.GetSqlValue(2).ToString() });
             }
             m_Conne_Plus.CloesConn();
         }

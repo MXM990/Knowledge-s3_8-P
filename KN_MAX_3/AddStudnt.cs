@@ -25,31 +25,29 @@ namespace KN_MAX_3
         }
         private void FillComboBoxUi()
         {
-           m_Gender = new List<model>();
-           m_Get_data = new GetData();
-           m_Get_data.GetGender(m_Gender);
-           foreach (var item in m_Gender)
-           {
+            m_Gender = new List<model>();
+            m_Get_data = new GetData();
+            m_Get_data.GetGender(m_Gender);
+            foreach (var item in m_Gender)
+            {
                 if (item.type != "")
                 {
                     Gender_Select.Items.Add(item.type);
                 }
-           }
+            }
         }
-
         private void BACK_BT_Click(object sender, EventArgs e)
         {
             m_Main = new MainUI();
             m_Main.Show();
             this.Close();
         }
-
         private void ADD_bt_Click(object sender, EventArgs e)
         {
             Guid Gender_guid = new Guid();
             if (Gender_Select.Text == String.Empty || name_stu.Text == string.Empty || phone_stu.Text == string.Empty)
             {
-                MessageBox.Show("Error!!!", "Empty Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Empty Filed", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             for (int i = 0; i < m_Gender.Count; i++)
@@ -65,16 +63,18 @@ namespace KN_MAX_3
                 m_add = new Insert();
                 if (m_add.Insertstu(name_stu.Text, phone_stu.Text, Gender_guid))
                 {
-                    MessageBox.Show("ADD Done");
+                    MessageBox.Show("add is done", "notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     name_stu.Text = phone_stu.Text = string.Empty;
+                    Gender_Select.SelectedIndex = -1;
                 }
                 else
                 {
-                    MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("You Can't ADD", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Error!!!", "The name Is exist !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The name Is exist !", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

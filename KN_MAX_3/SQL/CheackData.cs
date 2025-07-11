@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-
 namespace KN_MAX_3.SQL
 {
     internal class CheackData
@@ -30,7 +29,6 @@ namespace KN_MAX_3.SQL
             {
                 GetGuid(Name_stu);
                 return true;
-
             }
             return false;
         }
@@ -46,7 +44,15 @@ namespace KN_MAX_3.SQL
                 m_model.ID = Guid.Parse(m_Reader.GetSqlValue(0).ToString());
             }
             m_Conne_Plus.CloesConn();
-            
+        }
+        public bool cheack_max_stu_in_class(int max_stu)
+        {
+            m_Conne_Plus.OpenConn();
+            string Qury = "select count(*) from STUDENT";
+            m_Command = new SqlCommand(Qury, m_Conne_Plus.Conne);
+            int count = (int)m_Command.ExecuteScalar();
+            m_Conne_Plus.CloesConn();
+            return count <= max_stu;
         }
     }
 }

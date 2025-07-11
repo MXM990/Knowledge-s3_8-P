@@ -1,6 +1,6 @@
 ﻿namespace KN_MAX_3
 {
-    partial class NewRegsterStunent
+    partial class RegsterStunent
     {
         /// <summary>
         /// Required designer variable.
@@ -49,9 +49,10 @@
             this.ADD_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_bt.Location = new System.Drawing.Point(190, 166);
+            this.ADD_bt.Location = new System.Drawing.Point(270, 203);
+            this.ADD_bt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ADD_bt.Name = "ADD_bt";
-            this.ADD_bt.Size = new System.Drawing.Size(149, 63);
+            this.ADD_bt.Size = new System.Drawing.Size(174, 78);
             this.ADD_bt.TabIndex = 5;
             this.ADD_bt.Text = "ADD";
             this.ADD_bt.UseVisualStyleBackColor = false;
@@ -70,9 +71,10 @@
             this.BACK_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BACK_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BACK_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BACK_BT.Location = new System.Drawing.Point(12, 235);
+            this.BACK_BT.Location = new System.Drawing.Point(62, 288);
+            this.BACK_BT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BACK_BT.Name = "BACK_BT";
-            this.BACK_BT.Size = new System.Drawing.Size(149, 63);
+            this.BACK_BT.Size = new System.Drawing.Size(174, 78);
             this.BACK_BT.TabIndex = 6;
             this.BACK_BT.Text = "BACK";
             this.BACK_BT.UseVisualStyleBackColor = false;
@@ -84,9 +86,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(37, 42);
+            this.label1.Location = new System.Drawing.Point(56, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 26);
+            this.label1.Size = new System.Drawing.Size(162, 31);
             this.label1.TabIndex = 8;
             this.label1.Text = "Class Name";
             // 
@@ -96,38 +99,41 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label2.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label2.Location = new System.Drawing.Point(26, 99);
+            this.label2.Location = new System.Drawing.Point(43, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 26);
+            this.label2.Size = new System.Drawing.Size(183, 31);
             this.label2.TabIndex = 9;
             this.label2.Text = "Name stundet";
             // 
             // Class_Select
             // 
+            this.Class_Select.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Class_Select.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Class_Select.FormattingEnabled = true;
-            this.Class_Select.Location = new System.Drawing.Point(190, 42);
+            this.Class_Select.Location = new System.Drawing.Point(270, 51);
+            this.Class_Select.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Class_Select.Name = "Class_Select";
-            this.Class_Select.Size = new System.Drawing.Size(162, 33);
+            this.Class_Select.Size = new System.Drawing.Size(188, 37);
             this.Class_Select.TabIndex = 11;
-            this.Class_Select.SelectedIndexChanged += new System.EventHandler(this.Class_Select_SelectedIndexChanged);
             // 
             // name_stu
             // 
             this.name_stu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.name_stu.ForeColor = System.Drawing.Color.Green;
-            this.name_stu.Location = new System.Drawing.Point(190, 99);
+            this.name_stu.Location = new System.Drawing.Point(270, 121);
+            this.name_stu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.name_stu.Name = "name_stu";
-            this.name_stu.Size = new System.Drawing.Size(162, 30);
+            this.name_stu.Size = new System.Drawing.Size(188, 36);
             this.name_stu.TabIndex = 12;
             // 
-            // NewRegsterStunent
+            // RegsterStunent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(542, 310);
+            this.ClientSize = new System.Drawing.Size(602, 382);
             this.Controls.Add(this.name_stu);
             this.Controls.Add(this.Class_Select);
             this.Controls.Add(this.label2);
@@ -135,7 +141,8 @@
             this.Controls.Add(this.BACK_BT);
             this.Controls.Add(this.ADD_bt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "NewRegsterStunent";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "RegsterStunent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD Gender";
             this.ResumeLayout(false);
