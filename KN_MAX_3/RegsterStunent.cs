@@ -50,7 +50,7 @@ namespace KN_MAX_3
                             max_stu = Convert.ToInt32(m_Class_choes[i].maxsize_stu);
                         }
                     }
-                    if (Ch_D.cheack_max_stu_in_class(max_stu))
+                    if (Ch_D.cheack_max_stu_in_class(max_stu , Class_Guid))
                     {
                         m_add = new Insert();
                         if (m_add.InsertStudentInClass(Class_Guid, Ch_D.m_model.ID))

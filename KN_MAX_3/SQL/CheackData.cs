@@ -12,6 +12,7 @@ namespace KN_MAX_3.SQL
         Connection_SQL_MXM m_Conne_Plus;
         SqlCommand m_Command;
         public model m_model;
+
         SqlDataReader m_Reader;
 
         public CheackData()
@@ -45,14 +46,15 @@ namespace KN_MAX_3.SQL
             }
             m_Conne_Plus.CloesConn();
         }
-        public bool cheack_max_stu_in_class(int max_stu)
+        public bool cheack_max_stu_in_class(int max_stu , Guid g_c)
         {
             m_Conne_Plus.OpenConn();
-            string Qury = "select count(*) from STUDENT";
+            string Qury = " SELECT COUNT(*) FROM STU_CLASS  WHERE GUID_CLASS = @GUID_CL";
             m_Command = new SqlCommand(Qury, m_Conne_Plus.Conne);
+            m_Command.Parameters.AddWithValue("@GUID_CL", g_c);
             int count = (int)m_Command.ExecuteScalar();
             m_Conne_Plus.CloesConn();
-            return count <= max_stu;
+            return count < max_stu;
         }
     }
 }
