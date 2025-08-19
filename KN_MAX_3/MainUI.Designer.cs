@@ -35,6 +35,7 @@
             this.EXIT_BT = new System.Windows.Forms.Button();
             this.Test_bt = new System.Windows.Forms.Button();
             this.Reg_bt = new System.Windows.Forms.Button();
+            this.disply_data = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ADD_TECH_BT
@@ -50,9 +51,10 @@
             this.ADD_TECH_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_TECH_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_TECH_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_TECH_BT.Location = new System.Drawing.Point(286, 144);
+            this.ADD_TECH_BT.Location = new System.Drawing.Point(334, 177);
+            this.ADD_TECH_BT.Margin = new System.Windows.Forms.Padding(4);
             this.ADD_TECH_BT.Name = "ADD_TECH_BT";
-            this.ADD_TECH_BT.Size = new System.Drawing.Size(228, 85);
+            this.ADD_TECH_BT.Size = new System.Drawing.Size(266, 96);
             this.ADD_TECH_BT.TabIndex = 2;
             this.ADD_TECH_BT.Text = global::KN_MAX_3.Properties.Resources.ID_STREING_ADD_Tech;
             this.ADD_TECH_BT.UseVisualStyleBackColor = false;
@@ -70,10 +72,11 @@
             this.ADD_CL_BT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.ADD_CL_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_CL_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.ADD_CL_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_CL_BT.Location = new System.Drawing.Point(12, 144);
+            this.ADD_CL_BT.ForeColor = System.Drawing.Color.White;
+            this.ADD_CL_BT.Location = new System.Drawing.Point(14, 177);
+            this.ADD_CL_BT.Margin = new System.Windows.Forms.Padding(4);
             this.ADD_CL_BT.Name = "ADD_CL_BT";
-            this.ADD_CL_BT.Size = new System.Drawing.Size(228, 85);
+            this.ADD_CL_BT.Size = new System.Drawing.Size(266, 96);
             this.ADD_CL_BT.TabIndex = 1;
             this.ADD_CL_BT.Text = global::KN_MAX_3.Properties.Resources.ID_STREING_ADD_Class;
             this.ADD_CL_BT.UseVisualStyleBackColor = false;
@@ -92,9 +95,10 @@
             this.ADD_ST_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_ST_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_ST_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_ST_bt.Location = new System.Drawing.Point(12, 33);
+            this.ADD_ST_bt.Location = new System.Drawing.Point(14, 41);
+            this.ADD_ST_bt.Margin = new System.Windows.Forms.Padding(4);
             this.ADD_ST_bt.Name = "ADD_ST_bt";
-            this.ADD_ST_bt.Size = new System.Drawing.Size(228, 85);
+            this.ADD_ST_bt.Size = new System.Drawing.Size(266, 96);
             this.ADD_ST_bt.TabIndex = 0;
             this.ADD_ST_bt.Text = global::KN_MAX_3.Properties.Resources.ID_STREING_ADD_STU;
             this.ADD_ST_bt.UseVisualStyleBackColor = false;
@@ -113,9 +117,10 @@
             this.ADD_GR_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_GR_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_GR_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_GR_BT.Location = new System.Drawing.Point(286, 33);
+            this.ADD_GR_BT.Location = new System.Drawing.Point(334, 41);
+            this.ADD_GR_BT.Margin = new System.Windows.Forms.Padding(4);
             this.ADD_GR_BT.Name = "ADD_GR_BT";
-            this.ADD_GR_BT.Size = new System.Drawing.Size(228, 85);
+            this.ADD_GR_BT.Size = new System.Drawing.Size(266, 96);
             this.ADD_GR_BT.TabIndex = 3;
             this.ADD_GR_BT.Text = global::KN_MAX_3.Properties.Resources.ID_STREING_ADD_Gender;
             this.ADD_GR_BT.UseVisualStyleBackColor = false;
@@ -134,9 +139,10 @@
             this.EXIT_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EXIT_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.EXIT_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.EXIT_BT.Location = new System.Drawing.Point(196, 235);
+            this.EXIT_BT.Location = new System.Drawing.Point(221, 444);
+            this.EXIT_BT.Margin = new System.Windows.Forms.Padding(4);
             this.EXIT_BT.Name = "EXIT_BT";
-            this.EXIT_BT.Size = new System.Drawing.Size(149, 63);
+            this.EXIT_BT.Size = new System.Drawing.Size(174, 73);
             this.EXIT_BT.TabIndex = 4;
             this.EXIT_BT.Text = global::KN_MAX_3.Properties.Resources.ID_STREING_EXIT;
             this.EXIT_BT.UseVisualStyleBackColor = false;
@@ -155,9 +161,10 @@
             this.Test_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Test_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Test_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Test_bt.Location = new System.Drawing.Point(26, 242);
+            this.Test_bt.Location = new System.Drawing.Point(32, 453);
+            this.Test_bt.Margin = new System.Windows.Forms.Padding(4);
             this.Test_bt.Name = "Test_bt";
-            this.Test_bt.Size = new System.Drawing.Size(80, 48);
+            this.Test_bt.Size = new System.Drawing.Size(93, 73);
             this.Test_bt.TabIndex = 5;
             this.Test_bt.Text = "Test";
             this.Test_bt.UseVisualStyleBackColor = false;
@@ -175,22 +182,46 @@
             this.Reg_bt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Reg_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reg_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.Reg_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Reg_bt.Location = new System.Drawing.Point(385, 242);
+            this.Reg_bt.ForeColor = System.Drawing.Color.White;
+            this.Reg_bt.Location = new System.Drawing.Point(465, 453);
+            this.Reg_bt.Margin = new System.Windows.Forms.Padding(4);
             this.Reg_bt.Name = "Reg_bt";
-            this.Reg_bt.Size = new System.Drawing.Size(116, 48);
+            this.Reg_bt.Size = new System.Drawing.Size(135, 73);
             this.Reg_bt.TabIndex = 6;
             this.Reg_bt.Text = "Regster";
             this.Reg_bt.UseVisualStyleBackColor = false;
             this.Reg_bt.Click += new System.EventHandler(this.Reg_bt_Click);
             // 
+            // disply_data
+            // 
+            this.disply_data.BackColor = System.Drawing.Color.Transparent;
+            this.disply_data.BackgroundImage = global::KN_MAX_3.Properties.Resources.Picsart_25_05_17_21_27_21_083;
+            this.disply_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.disply_data.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.disply_data.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.disply_data.FlatAppearance.BorderSize = 0;
+            this.disply_data.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.disply_data.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.disply_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.disply_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.disply_data.ForeColor = System.Drawing.Color.White;
+            this.disply_data.Location = new System.Drawing.Point(32, 307);
+            this.disply_data.Margin = new System.Windows.Forms.Padding(4);
+            this.disply_data.Name = "disply_data";
+            this.disply_data.Size = new System.Drawing.Size(534, 96);
+            this.disply_data.TabIndex = 7;
+            this.disply_data.Text = "Display data";
+            this.disply_data.UseVisualStyleBackColor = false;
+            this.disply_data.Click += new System.EventHandler(this.disply_data_Click);
+            // 
             // MainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(542, 310);
+            this.ClientSize = new System.Drawing.Size(632, 530);
+            this.Controls.Add(this.disply_data);
             this.Controls.Add(this.Reg_bt);
             this.Controls.Add(this.Test_bt);
             this.Controls.Add(this.EXIT_BT);
@@ -199,6 +230,7 @@
             this.Controls.Add(this.ADD_CL_BT);
             this.Controls.Add(this.ADD_ST_bt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main UI";
@@ -215,6 +247,7 @@
         private System.Windows.Forms.Button EXIT_BT;
         private System.Windows.Forms.Button Test_bt;
         private System.Windows.Forms.Button Reg_bt;
+        private System.Windows.Forms.Button disply_data;
     }
 }
 

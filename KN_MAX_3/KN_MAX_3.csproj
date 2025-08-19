@@ -70,17 +70,23 @@
     <Compile Include="add_Class.Designer.cs">
       <DependentUpon>add_Class.cs</DependentUpon>
     </Compile>
+    <Compile Include="Disply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disply.Designer.cs">
+      <DependentUpon>Disply.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainUI.Designer.cs">
       <DependentUpon>MainUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewRegsterStunent.cs">
+    <Compile Include="RegsterStunent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewRegsterStunent.Designer.cs">
-      <DependentUpon>NewRegsterStunent.cs</DependentUpon>
+    <Compile Include="RegsterStunent.Designer.cs">
+      <DependentUpon>RegsterStunent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +107,12 @@
     <Compile Include="SQL\GetData.cs" />
     <Compile Include="SQL\Insert.cs" />
     <Compile Include="SQL\model.cs" />
+    <Compile Include="View Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Data.Designer.cs">
+      <DependentUpon>View Data.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ADD  Tech.resx">
       <DependentUpon>ADD  Tech.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,12 +125,15 @@
     <EmbeddedResource Include="add_Class.resx">
       <DependentUpon>add_Class.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Disply.resx">
+      <DependentUpon>Disply.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewRegsterStunent.resx">
-      <DependentUpon>NewRegsterStunent.cs</DependentUpon>
+    <EmbeddedResource Include="RegsterStunent.resx">
+      <DependentUpon>RegsterStunent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Regster_UI.resx">
       <DependentUpon>Regster_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Data.resx">
+      <DependentUpon>View Data.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -11,7 +11,6 @@ namespace KN_MAX_3.SQL
         public Guid ID { get; set; }
         public string Name { get; set; }
         public string type { get; set; }
-
-
+        public string maxsize_stu { get; set; }
     }
 }

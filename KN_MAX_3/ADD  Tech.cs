@@ -12,14 +12,13 @@ using KN_MAX_3.SQL;
 
 namespace KN_MAX_3
 {
-    public partial class ADD__Tech : Form
+    public partial class ADD_Tech : Form
     {
         MainUI m_Main;
         GetData m_Get_data;
         List<model> m_Gender;
         Insert m_add;
-
-        public ADD__Tech()
+        public ADD_Tech()
         {
             InitializeComponent();
             FillComboBoxUi();
@@ -39,7 +38,7 @@ namespace KN_MAX_3
             Guid Gender_guid = new Guid();
             if (Gender_Select.Text == String.Empty || name_th.Text == string.Empty || phone_th.Text == string.Empty)
             {
-                MessageBox.Show("Error!!!", "Empty Filed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Empty Filed", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             for (int i = 0; i < m_Gender.Count; i++)
@@ -49,18 +48,18 @@ namespace KN_MAX_3
                     Gender_guid = m_Gender[i].ID;
                 }
             }
-
             m_add = new Insert();
             if (m_add.InsertTech(name_th.Text, phone_th.Text, Gender_guid))
             {
-                MessageBox.Show("ADD Done");
+                MessageBox.Show("add is done", "notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                name_th.Text = phone_th.Text =  string.Empty;
+                Gender_Select.SelectedIndex = -1;
             }
             else
             {
-                MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You Can't ADD", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void BACK_BT_Click(object sender, EventArgs e)
         {
             m_Main = new MainUI();

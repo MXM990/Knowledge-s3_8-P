@@ -38,9 +38,10 @@
             // 
             this.name_gr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.name_gr.ForeColor = System.Drawing.Color.Green;
-            this.name_gr.Location = new System.Drawing.Point(183, 114);
+            this.name_gr.Location = new System.Drawing.Point(278, 78);
+            this.name_gr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.name_gr.Name = "name_gr";
-            this.name_gr.Size = new System.Drawing.Size(162, 30);
+            this.name_gr.Size = new System.Drawing.Size(188, 36);
             this.name_gr.TabIndex = 0;
             // 
             // ADD_bt
@@ -56,9 +57,10 @@
             this.ADD_bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ADD_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.ADD_bt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ADD_bt.Location = new System.Drawing.Point(190, 180);
+            this.ADD_bt.Location = new System.Drawing.Point(278, 203);
+            this.ADD_bt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ADD_bt.Name = "ADD_bt";
-            this.ADD_bt.Size = new System.Drawing.Size(149, 63);
+            this.ADD_bt.Size = new System.Drawing.Size(174, 78);
             this.ADD_bt.TabIndex = 5;
             this.ADD_bt.Text = "ADD";
             this.ADD_bt.UseVisualStyleBackColor = false;
@@ -77,9 +79,10 @@
             this.BACK_BT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BACK_BT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.BACK_BT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BACK_BT.Location = new System.Drawing.Point(12, 235);
+            this.BACK_BT.Location = new System.Drawing.Point(70, 203);
+            this.BACK_BT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BACK_BT.Name = "BACK_BT";
-            this.BACK_BT.Size = new System.Drawing.Size(149, 63);
+            this.BACK_BT.Size = new System.Drawing.Size(174, 78);
             this.BACK_BT.TabIndex = 6;
             this.BACK_BT.Text = "BACK";
             this.BACK_BT.UseVisualStyleBackColor = false;
@@ -91,24 +94,26 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(53, 117);
+            this.label1.Location = new System.Drawing.Point(75, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 26);
+            this.label1.Size = new System.Drawing.Size(154, 31);
             this.label1.TabIndex = 7;
             this.label1.Text = "Type Name";
             // 
             // AddGender
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KN_MAX_3.Properties.Resources.dark_purple_oppo_r15_stock;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(542, 310);
+            this.ClientSize = new System.Drawing.Size(589, 355);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BACK_BT);
             this.Controls.Add(this.ADD_bt);
             this.Controls.Add(this.name_gr);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddGender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD Gender";

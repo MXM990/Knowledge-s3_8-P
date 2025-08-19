@@ -11,14 +11,14 @@ using KN_MAX_3.SQL;
 
 namespace KN_MAX_3
 {
-    public partial class NewRegsterStunent : Form
+    public partial class RegsterStunent : Form
     {
         MainUI m_Main;
         GetData m_Get_data;
         List<model> m_Class_choes;
         Insert m_add;
         CheackData Ch_D;
-        public NewRegsterStunent()
+        public RegsterStunent()
         {
             InitializeComponent();
             FillComboBoxUi();
@@ -33,7 +33,6 @@ namespace KN_MAX_3
                 Class_Select.Items.Add(item.Name);
             }
         }
-
         private void ADD_bt_Click(object sender, EventArgs e)
         {
             if (name_stu.Text != string.Empty && !string.IsNullOrEmpty(Class_Select.Text))
@@ -42,44 +41,50 @@ namespace KN_MAX_3
                 if (Ch_D.IsNameExist(name_stu.Text))
                 {
                     Guid Class_Guid = new Guid();
+                    int max_stu = 0;
                     for (int i = 0; i < m_Class_choes.Count; i++)
                     {
                         if (m_Class_choes[i].Name == Class_Select.Text)
                         {
                             Class_Guid = m_Class_choes[i].ID;
+                            max_stu = Convert.ToInt32(m_Class_choes[i].maxsize_stu);
                         }
                     }
-                    m_add = new Insert();
-                    if (m_add.InsertStudentInClass(Class_Guid, Ch_D.m_model.ID))
+                    if (Ch_D.cheack_max_stu_in_class(max_stu , Class_Guid))
                     {
-                        MessageBox.Show("ADD Done");
+                        m_add = new Insert();
+                        if (m_add.InsertStudentInClass(Class_Guid, Ch_D.m_model.ID))
+                        {
+                            MessageBox.Show("add is done", "notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            name_stu.Text = string.Empty;
+                            Class_Select.SelectedIndex = -1;
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("You Can't ADD", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Error!!!", "You Can't ADD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("This class cannot be booked because it is full.", "notice!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("not Found User", "the user " + name_stu.Text + " is not Exist", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("the user " + name_stu.Text + " is not Exist", "not Found User", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Fill all data", "Empty Fild ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Empty Fild", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void BACK_BT_Click(object sender, EventArgs e)
         {
             Regster_UI REg_UI = new Regster_UI();
             REg_UI.Show();
             this.Close();
-        }
-
-        private void Class_Select_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
